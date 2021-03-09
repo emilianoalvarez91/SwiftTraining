@@ -11,5 +11,5 @@ struct Planet: Decodable {
   let id: String
   let name: String
   let shortDescription: String
-  let imageUrl: String
+  let imageUrl: URL
 }

@@ -6,17 +6,17 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct PlanetRow: View {
 
-  var imageName: String
-  var title: String
-  var shortDescription: String
+  let imageURL: URL
+  let title: String
+  let shortDescription: String
 
   var body: some View {
-
     HStack {
-      Image(imageName)
+      AnimatedImage(url: imageURL)
         .resizable()
         .frame(width: 60, height: 60)
       VStack(alignment: .leading) {
@@ -33,9 +33,19 @@ struct PlanetRow: View {
 
 struct PlanetRow_Previews: PreviewProvider {
   static var previews: some View {
-    PlanetRow(imageName: "Mercury",
-              title: "Mercury",
-              shortDescription: "The Swiftest Planet")
-      .previewLayout(.fixed(width: 350, height: 60))
+    Group {
+      PlanetRow(imageURL: PlanetMockData.planets[0].imageUrl,
+                title: PlanetMockData.planets[0].name,
+                shortDescription: PlanetMockData.planets[0].shortDescription)
+        .previewLayout(.fixed(width: 350, height: 60))
+        .previewDisplayName("Mercury") // changes the name of preview title
+
+      PlanetRow(imageURL: PlanetMockData.planets[1].imageUrl,
+                title: PlanetMockData.planets[1].name,
+                shortDescription: PlanetMockData.planets[1].shortDescription)
+        .previewLayout(.fixed(width: 350, height: 60))
+        .previewDisplayName("Jupiter")
+
+    }
   }
 }
