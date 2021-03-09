@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B94C05825F7BBA3000CF9C5 /* PlanetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B94C05725F7BBA3000CF9C5 /* PlanetService.swift */; };
+		6B94C05C25F7BC07000CF9C5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6B94C05B25F7BC07000CF9C5 /* Alamofire */; };
 		A102AE2525F7B49F00424CDD /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A102AE2425F7B49F00424CDD /* SDWebImageSwiftUI */; };
 		B5F66ECE25F7B0010000ED7B /* planets.json in Resources */ = {isa = PBXBuildFile; fileRef = B5F66ECD25F7B0010000ED7B /* planets.json */; };
 		B5F66ED225F7B02C0000ED7B /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F66ED125F7B02C0000ED7B /* Planet.swift */; };
@@ -20,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B94C05725F7BBA3000CF9C5 /* PlanetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetService.swift; sourceTree = "<group>"; };
 		B5F66ECD25F7B0010000ED7B /* planets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planets.json; sourceTree = "<group>"; };
 		B5F66ED125F7B02C0000ED7B /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		B5F66ED625F7B0A10000ED7B /* EntityLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityLoader.swift; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A102AE2525F7B49F00424CDD /* SDWebImageSwiftUI in Frameworks */,
+				6B94C05C25F7BC07000CF9C5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +54,7 @@
 			children = (
 				B5F66ECD25F7B0010000ED7B /* planets.json */,
 				B5F66EDA25F7B13A0000ED7B /* PlanetMockData.swift */,
+				6B94C05725F7BBA3000CF9C5 /* PlanetService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			name = SwiftUITraining;
 			packageProductDependencies = (
 				A102AE2425F7B49F00424CDD /* SDWebImageSwiftUI */,
+				6B94C05B25F7BC07000CF9C5 /* Alamofire */,
 			);
 			productName = SwiftUITraining;
 			productReference = C1B7F0BE25F79FE100CD1530 /* SwiftUITraining.app */;
@@ -158,6 +164,7 @@
 			mainGroup = C1B7F0B525F79FE100CD1530;
 			packageReferences = (
 				A102AE2325F7B49F00424CDD /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				6B94C05A25F7BC07000CF9C5 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = C1B7F0BF25F79FE100CD1530 /* Products */;
 			projectDirPath = "";
@@ -191,6 +198,7 @@
 				B5F66ED725F7B0A10000ED7B /* EntityLoader.swift in Sources */,
 				C1B7F0C425F79FE100CD1530 /* PlanetRow.swift in Sources */,
 				C1B7F0C225F79FE100CD1530 /* SwiftUITrainingApp.swift in Sources */,
+				6B94C05825F7BBA3000CF9C5 /* PlanetService.swift in Sources */,
 				B5F66EDB25F7B13A0000ED7B /* PlanetMockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +390,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6B94C05A25F7BC07000CF9C5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
 		A102AE2325F7B49F00424CDD /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -393,6 +409,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6B94C05B25F7BC07000CF9C5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B94C05A25F7BC07000CF9C5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		A102AE2425F7B49F00424CDD /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A102AE2325F7B49F00424CDD /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
