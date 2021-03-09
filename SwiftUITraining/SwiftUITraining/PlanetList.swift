@@ -9,19 +9,28 @@ import SwiftUI
 
 struct PlanetList: View {
 
-    var planets: [Planet]
-    var body: some View {
+  @State
+  var planets: [Planet] = []
 
-      List(planets) { item in
-        PlanetRow(imageURL: item.imageUrl,
-                  title: item.name,
+  let planetService: PlanetService
+
+  var body: some View {
+
+    List(planets) { item in
+      PlanetRow(imageURL: item.imageUrl,
+                title: item.name,
                 shortDescription: item.shortDescription)
+    }.onAppear {
+      planetService.planets { (planets) in
+        self.planets = planets
       }
     }
+
+  }
 }
 
 struct PlanetList_Previews: PreviewProvider {
-    static var previews: some View {
-      PlanetList(planets: PlanetMockData.planets)
-    }
+  static var previews: some View {
+    PlanetList(planetService: PlanetService())
+  }
 }

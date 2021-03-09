@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SwiftUITrainingApp: App {
-    var body: some Scene {
-        WindowGroup {
-          PlanetList(planets: PlanetMockData.planets)
-        }
+
+  let planetService = PlanetService()
+
+  var body: some Scene {
+    WindowGroup {
+      PlanetList(planetService: PlanetService())
     }
+  }
 }
