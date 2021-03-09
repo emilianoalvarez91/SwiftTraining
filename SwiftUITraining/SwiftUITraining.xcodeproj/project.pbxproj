@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5F66ECE25F7B0010000ED7B /* planets.json in Resources */ = {isa = PBXBuildFile; fileRef = B5F66ECD25F7B0010000ED7B /* planets.json */; };
+		B5F66ED225F7B02C0000ED7B /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F66ED125F7B02C0000ED7B /* Planet.swift */; };
+		B5F66ED725F7B0A10000ED7B /* EntityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F66ED625F7B0A10000ED7B /* EntityLoader.swift */; };
+		B5F66EDB25F7B13A0000ED7B /* PlanetMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F66EDA25F7B13A0000ED7B /* PlanetMockData.swift */; };
 		C1B7F0C225F79FE100CD1530 /* SwiftUITrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7F0C125F79FE100CD1530 /* SwiftUITrainingApp.swift */; };
 		C1B7F0C425F79FE100CD1530 /* PlanetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7F0C325F79FE100CD1530 /* PlanetRow.swift */; };
 		C1B7F0C625F79FE200CD1530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B7F0C525F79FE200CD1530 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5F66ECD25F7B0010000ED7B /* planets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planets.json; sourceTree = "<group>"; };
+		B5F66ED125F7B02C0000ED7B /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		B5F66ED625F7B0A10000ED7B /* EntityLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityLoader.swift; sourceTree = "<group>"; };
+		B5F66EDA25F7B13A0000ED7B /* PlanetMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetMockData.swift; sourceTree = "<group>"; };
 		C1B7F0BE25F79FE100CD1530 /* SwiftUITraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B7F0C125F79FE100CD1530 /* SwiftUITrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITrainingApp.swift; sourceTree = "<group>"; };
 		C1B7F0C325F79FE100CD1530 /* PlanetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRow.swift; sourceTree = "<group>"; };
@@ -33,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5F66ED025F7B00C0000ED7B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B5F66ECD25F7B0010000ED7B /* planets.json */,
+				B5F66EDA25F7B13A0000ED7B /* PlanetMockData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B5F66ED525F7B02F0000ED7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5F66ED125F7B02C0000ED7B /* Planet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5F66ED925F7B0A40000ED7B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B5F66ED625F7B0A10000ED7B /* EntityLoader.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		C1B7F0B525F79FE100CD1530 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +85,9 @@
 		C1B7F0C025F79FE100CD1530 /* SwiftUITraining */ = {
 			isa = PBXGroup;
 			children = (
+				B5F66ED925F7B0A40000ED7B /* Helper */,
+				B5F66ED525F7B02F0000ED7B /* Model */,
+				B5F66ED025F7B00C0000ED7B /* Data */,
 				C1B7F0C125F79FE100CD1530 /* SwiftUITrainingApp.swift */,
 				C1B7F0C325F79FE100CD1530 /* PlanetRow.swift */,
 				C1B7F0C525F79FE200CD1530 /* Assets.xcassets */,
@@ -128,6 +164,7 @@
 			files = (
 				C1B7F0C925F79FE200CD1530 /* Preview Assets.xcassets in Resources */,
 				C1B7F0C625F79FE200CD1530 /* Assets.xcassets in Resources */,
+				B5F66ECE25F7B0010000ED7B /* planets.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F66ED225F7B02C0000ED7B /* Planet.swift in Sources */,
+				B5F66ED725F7B0A10000ED7B /* EntityLoader.swift in Sources */,
 				C1B7F0C425F79FE100CD1530 /* PlanetRow.swift in Sources */,
 				C1B7F0C225F79FE100CD1530 /* SwiftUITrainingApp.swift in Sources */,
+				B5F66EDB25F7B13A0000ED7B /* PlanetMockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
