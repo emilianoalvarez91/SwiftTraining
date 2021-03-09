@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6B94C05825F7BBA3000CF9C5 /* PlanetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B94C05725F7BBA3000CF9C5 /* PlanetService.swift */; };
 		6B94C05C25F7BC07000CF9C5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6B94C05B25F7BC07000CF9C5 /* Alamofire */; };
+		6B94C06025F7C727000CF9C5 /* PlanetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B94C05F25F7C727000CF9C5 /* PlanetDetail.swift */; };
 		A102AE2525F7B49F00424CDD /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A102AE2425F7B49F00424CDD /* SDWebImageSwiftUI */; };
 		B5F66ECE25F7B0010000ED7B /* planets.json in Resources */ = {isa = PBXBuildFile; fileRef = B5F66ECD25F7B0010000ED7B /* planets.json */; };
 		B5F66ED225F7B02C0000ED7B /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F66ED125F7B02C0000ED7B /* Planet.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		6B94C05725F7BBA3000CF9C5 /* PlanetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetService.swift; sourceTree = "<group>"; };
+		6B94C05F25F7C727000CF9C5 /* PlanetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetail.swift; sourceTree = "<group>"; };
 		B5F66ECD25F7B0010000ED7B /* planets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planets.json; sourceTree = "<group>"; };
 		B5F66ED125F7B02C0000ED7B /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		B5F66ED625F7B0A10000ED7B /* EntityLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityLoader.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				C1B7F0C325F79FE100CD1530 /* PlanetRow.swift */,
 				CF6565AA25F7B69200AFCDD4 /* PlanetList.swift */,
+				6B94C05F25F7C727000CF9C5 /* PlanetDetail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				CF6565AB25F7B69200AFCDD4 /* PlanetList.swift in Sources */,
 				B5F66ED725F7B0A10000ED7B /* EntityLoader.swift in Sources */,
 				C1B7F0C425F79FE100CD1530 /* PlanetRow.swift in Sources */,
+				6B94C06025F7C727000CF9C5 /* PlanetDetail.swift in Sources */,
 				C1B7F0C225F79FE100CD1530 /* SwiftUITrainingApp.swift in Sources */,
 				6B94C05825F7BBA3000CF9C5 /* PlanetService.swift in Sources */,
 				B5F66EDB25F7B13A0000ED7B /* PlanetMockData.swift in Sources */,
