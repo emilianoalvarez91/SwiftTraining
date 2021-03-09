@@ -15,15 +15,18 @@ struct PlanetList: View {
   let planetService: PlanetServiceProtocol
 
   var body: some View {
-
-    List(planets) { item in
-      PlanetRow(imageURL: item.imageUrl,
-                title: item.name,
-                shortDescription: item.shortDescription)
-    }.onAppear {
-      planetService.planets { (planets) in
-        self.planets = planets
-      }
+    NavigationView {
+      List(planets) { item in
+        NavigationLink(destination: PlanetDetail(imageURL: item.imageUrl, title: item.name, shortDescription: item.shortDescription) ) {
+          PlanetRow(imageURL: item.imageUrl,
+                    title: item.name,
+                    shortDescription: item.shortDescription)
+        }
+      }.onAppear {
+        planetService.planets { (planets) in
+          self.planets = planets
+        }
+      }.navigationTitle("Planets")
     }
 
   }
@@ -31,9 +34,9 @@ struct PlanetList: View {
 
 struct PlanetList_Previews: PreviewProvider {
   static var previews: some View {
-      PlanetList(planetService: StubPlanetServiceFail())
-        .previewDisplayName("Failing one")
-      PlanetList(planetService: StubPlanetServiceSucceed())
-        .previewDisplayName("Succeeding one")
+    PlanetList(planetService: StubPlanetServiceFail())
+      .previewDisplayName("Failing one")
+    PlanetList(planetService: StubPlanetServiceSucceed())
+      .previewDisplayName("Succeeding one")
   }
 }
