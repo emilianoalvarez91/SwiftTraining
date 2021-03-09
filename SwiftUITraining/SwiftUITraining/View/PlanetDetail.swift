@@ -29,16 +29,19 @@ struct PlanetDetail: View {
                 Text(shortDescription)
                   .font(Font.custom("Helvetica", size: 18))
                   .foregroundColor(.white)
+                  .padding(.horizontal, 16.0)
+                  .multilineTextAlignment(.center)
                 Spacer()
             }
         }
+        .padding(.top, -60.0)
     }
 }
 
 struct PlanetDetail_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetDetail(imageURL: PlanetMockData.planets[0].imageUrl,
-                     title: PlanetMockData.planets[0].name,
-                     shortDescription: PlanetMockData.planets[0].shortDescription)
+        PlanetDetail(imageURL: PlanetMockData.planets[1].imageUrl,
+                     title: PlanetMockData.planets[1].name,
+                     shortDescription: PlanetMockData.planets[1].shortDescription)
     }
 }

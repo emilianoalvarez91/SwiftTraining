@@ -15,6 +15,9 @@ struct SwiftUITrainingApp: App {
   var body: some Scene {
     WindowGroup {
       PlanetList(planetService: PlanetService())
+        .onAppear {
+          UINavigationBar.appearance().tintColor = .white
+        }
     }
   }
 }
