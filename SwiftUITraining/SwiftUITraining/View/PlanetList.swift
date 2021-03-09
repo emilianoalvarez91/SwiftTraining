@@ -12,7 +12,7 @@ struct PlanetList: View {
   @State
   var planets: [Planet] = []
 
-  let planetService: PlanetService
+  let planetService: PlanetServiceProtocol
 
   var body: some View {
 
@@ -31,6 +31,9 @@ struct PlanetList: View {
 
 struct PlanetList_Previews: PreviewProvider {
   static var previews: some View {
-    PlanetList(planetService: PlanetService())
+      PlanetList(planetService: StubPlanetServiceFail())
+        .previewDisplayName("Failing one")
+      PlanetList(planetService: StubPlanetServiceSucceed())
+        .previewDisplayName("Succeeding one")
   }
 }
