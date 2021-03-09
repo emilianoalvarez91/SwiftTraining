@@ -16,6 +16,7 @@
 		C1B7F0C425F79FE100CD1530 /* PlanetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7F0C325F79FE100CD1530 /* PlanetRow.swift */; };
 		C1B7F0C625F79FE200CD1530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B7F0C525F79FE200CD1530 /* Assets.xcassets */; };
 		C1B7F0C925F79FE200CD1530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B7F0C825F79FE200CD1530 /* Preview Assets.xcassets */; };
+		CF6565AB25F7B69200AFCDD4 /* PlanetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6565AA25F7B69200AFCDD4 /* PlanetList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		C1B7F0C525F79FE200CD1530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1B7F0C825F79FE200CD1530 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1B7F0CA25F79FE200CD1530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6565AA25F7B69200AFCDD4 /* PlanetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				C1B7F0C525F79FE200CD1530 /* Assets.xcassets */,
 				C1B7F0CA25F79FE200CD1530 /* Info.plist */,
 				C1B7F0C725F79FE200CD1530 /* Preview Content */,
+				CF6565AA25F7B69200AFCDD4 /* PlanetList.swift */,
 			);
 			path = SwiftUITraining;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F66ED225F7B02C0000ED7B /* Planet.swift in Sources */,
+				CF6565AB25F7B69200AFCDD4 /* PlanetList.swift in Sources */,
 				B5F66ED725F7B0A10000ED7B /* EntityLoader.swift in Sources */,
 				C1B7F0C425F79FE100CD1530 /* PlanetRow.swift in Sources */,
 				C1B7F0C225F79FE100CD1530 /* SwiftUITrainingApp.swift in Sources */,
